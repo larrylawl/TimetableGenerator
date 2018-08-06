@@ -22,7 +22,7 @@ for i, origin in enumerate(data_distance_json["rows"]):
         duration_string = duration_dict["text"]
         data_distance["%s>%s" %(Faculties[i],Faculties[j])] = duration_string
         
-with open("/Users/larrylaw/Documents/CS/TimetableGenerator /timetable/timetable/spiders/CORS_data.json") as file:
+with open("/Users/larrylaw/Documents/CS/TimetableGenerator /timetable/CORS_data.json") as file:
     cors_data = json.load(file)
 
 
