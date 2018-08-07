@@ -22,11 +22,6 @@ class TimetableSpider(scrapy.Spider):
     def parse_detailed(self, response):
         return {
                 "Module Code": response.xpath("normalize-space(//div[text()='Module Code :']/../../td[2])").extract()
+                "Module Title": response.xpath("//td[text()='Module Title :']/../td[2]/text").extract()
                 }
         #Definitely correct
-
-process = CrawlerProcess()
-process.crawl(TimetableSpider)
-process.start()
-
-https://myaces.nus.edu.sg/cors/jsp/report/ModuleDetailedInfo.jsp?acad_y=2018/2019&sem_c=1&mod_c=ACC1002
