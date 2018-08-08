@@ -45,17 +45,4 @@ class TimetableSpider(scrapy.Spider):
                                             "Room": lecture_list[6+(7*row)]
                                             }
         return lecture_dict
-                            
-                            
-                            
-                
-                                                
-                
-{"Class": lecture_list[0+(7*row)],
-                       
-                
-                
-                
-                }
-            
             
