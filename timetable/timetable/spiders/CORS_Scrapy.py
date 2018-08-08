@@ -23,5 +23,7 @@ class TimetableSpider(scrapy.Spider):
         return {
                 "Module Code": response.xpath("normalize-space(//div[text()='Module Code :']/../../td[2])").extract()
                 "Module Title": response.xpath("//td[text()='Module Title :']/../td[2]/text").extract()
+                "Exam Date": response.xpath("normalize-space(//td[text()='Exam Date :']/../td[2]/text())").extract() 
+                
                 }
         #Definitely correct
