@@ -20,7 +20,7 @@ class TimetableSpider(scrapy.Spider):
     
     def parse_detailed(self, response):
         lecture_list = response.xpath("//b[text()='Lecture Time Table']/../../../tr[2]/td/div/table/tr[position()>1]/td/text()").extract()
-        lecture_details = make_lecture_dict(lecture_list)
+        lecture_details = TimetableSpider.make_lecture_dict(lecture_list)
         return {
                 "Module Code": response.xpath("normalize-space(//div[text()='Module Code :']/../../td[2])").extract(),
                 "Module Title": response.xpath("//td[text()='Module Title :']/../td[2]/text").extract(),
@@ -28,7 +28,7 @@ class TimetableSpider(scrapy.Spider):
                 "Lecture": lecture_details
                 }
     
-    def make_lecture_dict(lecture_list):
+    def make_lecture_dict(self, lecture_list):
         """
         Input: List of lecture time table, unsorted by class
         Output: Dictionary of lecture time table, sorted by class
