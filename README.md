@@ -30,7 +30,7 @@ Grid breakdown in NUS Maps| - Finer breakdown of distance | - Problem w/ compute
 Data Scraped| URL
 :---|:---
 Following link to Module Detailed Information| https://myaces.nus.edu.sg/cors/jsp/report/ModuleInfoListing.jsp|
-Module Code, Module Title, Exam Date, Module Workload (to identify no. of lessons each), Lecture Time Table, Tutorial Time Table| https://myaces.nus.edu.sg/cors/jsp/report/ModuleDetailedInfo.jsp?acad_y=2018/2019&sem_c=1&mod_c=ACC1002#TutorialTimeTable
+Module Code, Module Title, Exam Date, Module Workload (to identify no. of lessons each), Lecture Time Table (Lec/Sec), Tutorial Time Table (Tut/Lab/Rec)| https://myaces.nus.edu.sg/cors/jsp/report/ModuleDetailedInfo.jsp?acad_y=2018/2019&sem_c=1&mod_c=ACC1002#TutorialTimeTable
 Distance between faculties| 
 
 Faculty|Address
