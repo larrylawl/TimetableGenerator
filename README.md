@@ -42,12 +42,13 @@ Engin|"Singapore 117575"
 Biz|"Singapore 119245"
 Science|"Singapore 117546"
 Music|"Singapore 117485" 
-Design_and_Environ|"Singapore 117566"
+#Design_and_Environ|"Singapore 117566"
 #Law|"Singapore 259776" 
 #Dentistry|"Singapore 119083"
 #Medicine_and_Nursing|"Singapore 119228"
 
 ## Notes
 If classes are the same, they MUST go together
+Temp removed D&E for their lecture type/tutorial goes on the same timing, which will mess the algo up
 
 
