@@ -59,8 +59,19 @@ Music|"Singapore 117485"
 #Dentistry|"Singapore 119083"
 #Medicine_and_Nursing|"Singapore 119228"
 
-## API
-1. Consider allowing arguments from user's input to fix timeslots of modules (if it's preallocated etc)
+## Pseudo Code
+1. Method to initialise
+    1. Arguments include: Mods, Timing (optional, if None, yield from database), Own commitments, Set timetable limit
+2. Generate Timetable
+    1. Mon - Fri
+    2. Hourly partitioned based on user's timetable limit
+3. Sort mods based on how limiting they are
+    1. No. of options
+    2. Spread across week
+4. Magic Timetable
+    1. Fix the most limiting mods
+    2. Identify gaps in timetable to suit Maker's schedule
+    3. Limiting mods go first
 
 ## Notes
 1. If classes are the same, they MUST go together
