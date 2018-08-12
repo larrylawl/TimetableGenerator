@@ -76,5 +76,5 @@ Music|"Singapore 117485"
 ## Notes
 1. If classes are the same, they MUST go together
 2. Temp removed D&E for their lecture type/tutorial goes on the same timing, which will mess the algo up
-
+3. https://nusmods.com/venues > Collection of all tut venues
 
