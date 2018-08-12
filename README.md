@@ -5,16 +5,28 @@ Automatic Timetable Generator
 Time and labour intensive to go through all timetable permutations
 
 ## Solution
-Automatic timetable generator that sorts timetable based on **most blocks of free time**, where blocks = (Morning, Noon, Night)
-    1. Maker's Schedule Principle: Only productive in large chunks of time (http://www.paulgraham.com/makersschedule.html)
+Automatic timetable generator that sorts timetable based on 
+1. Maker's Schedule
+    - Partitions timetable to three units: Morning, Noon (>= 4 hours), and Night
+    - Rationale: Need large chunks of time to be productive
+2. Manager's Schedule
+    - Partitions timetable to 1 hour units
+    - Rationale: Schedule of command
+3. Off Campus Schedule
+    - Minimal School days
+    - Rationale: Time travelled to school; stricter version of Maker's Schedule
+Source: http://www.paulgraham.com/makersschedule.html
 
 Assert
-
 1. Meal Times
-    1. Lunch: 11-12, 12-1, 1-2
-    2. Dinner: 5-6, 6-7, 7-8
-2. Start/End @ Utown
-3. Exam Time does not coincide
+    1. Lunch: 11-2
+    2. Dinner: 5-8
+2. Exam Time does not coincide
+3. Start/End @ Utown
+4. No 8 AM classes (?)
+
+Extensions
+1. Populate gym timings out (?)
 
 Dependent Variables
 1. Class timings
@@ -47,8 +59,11 @@ Music|"Singapore 117485"
 #Dentistry|"Singapore 119083"
 #Medicine_and_Nursing|"Singapore 119228"
 
+## API
+1. Consider allowing arguments from user's input to fix timeslots of modules (if it's preallocated etc)
+
 ## Notes
-If classes are the same, they MUST go together
-Temp removed D&E for their lecture type/tutorial goes on the same timing, which will mess the algo up
+1. If classes are the same, they MUST go together
+2. Temp removed D&E for their lecture type/tutorial goes on the same timing, which will mess the algo up
 
 
