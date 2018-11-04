@@ -17,6 +17,8 @@ Automatic timetable generator that sorts timetable based on
     - Rationale: Time travelled to school; stricter version of Maker's Schedule
 Source: http://www.paulgraham.com/makersschedule.html
 
+4. Version control
+
 Assert
 1. Meal Times
     1. Lunch: 11-2
