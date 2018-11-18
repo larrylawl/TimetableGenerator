@@ -2,7 +2,8 @@
 Automatic Timetable Generator
 
 ## Issue
-Time and labour intensive to go through all timetable permutations
+- Time and labour intensive to go through all timetable permutations
+- Add in no. of ppl indiciating X choice in tt (redistribute dd & ss)
 
 ## Solution
 Automatic timetable generator that sorts timetable based on 
