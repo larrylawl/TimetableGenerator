@@ -6,19 +6,11 @@ Automatic Timetable Generator
 - Add in no. of ppl indiciating X choice in tt (redistribute dd & ss)
 
 ## Solution
-Automatic timetable generator that sorts timetable based on 
-1. Maker's Schedule
-    - Partitions timetable to three units: Morning, Noon (>= 4 hours), and Night
-    - Rationale: Need large chunks of time to be productive
-2. Manager's Schedule
-    - Partitions timetable to 1 hour units
-    - Rationale: Schedule of command
-3. Off Campus Schedule
-    - Minimal School days
-    - Rationale: Time travelled to school; stricter version of Maker's Schedule
-Source: http://www.paulgraham.com/makersschedule.html
+1. Automatic timetable generator that sorts timetable based on least time wasted travelling
 
-4. Version control
+## Extra Features
+1. Version control
+2. Start/End location
 
 Assert
 1. Meal Times
